@@ -8,49 +8,47 @@
 
 body{
 margin:0;
-font-family:Verdana, sans-serif;
-background:linear-gradient(to right,#4facfe,#00f2fe);
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#667eea,#764ba2);
 text-align:center;
-color:#333;
+color:white;
 }
 
 .navbar{
-background:#000;
-color:white;
-padding:18px;
-font-size:22px;
+background:black;
+padding:15px;
+font-size:24px;
 font-weight:bold;
-letter-spacing:1px;
 }
 
 .content{
-background:white;
-margin:30px;
 padding:30px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid white;
+margin-top:20px;
 }
 
 h1{
-color:#0077ff;
 font-size:32px;
-}
-
-h2{
-color:#444;
-margin-top:30px;
+margin-top:15px;
 }
 
 p{
-font-size:16px;
-line-height:1.6;
+font-size:18px;
 }
 
-img{
-width:150px;
-border-radius:50%;
-border:4px solid #0077ff;
-margin-top:10px;
+.box{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+display:inline-block;
+margin-top:20px;
 }
 
 input,textarea{
@@ -58,32 +56,28 @@ width:90%;
 max-width:300px;
 padding:10px;
 margin-top:10px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:14px;
+border-radius:5px;
+border:1px solid gray;
 }
 
 button{
 padding:10px 20px;
-margin-top:12px;
-background:#0077ff;
+margin-top:10px;
+background:#4CAF50;
 color:white;
 border:none;
-border-radius:8px;
-font-size:16px;
+border-radius:5px;
 cursor:pointer;
-transition:0.3s;
 }
 
 button:hover{
-background:#0044aa;
-transform:scale(1.05);
+background:#2e7d32;
 }
 
 #msg{
 color:green;
 font-weight:bold;
-margin-top:12px;
+margin-top:10px;
 }
 
 </style>
@@ -97,30 +91,32 @@ Dhanush Website 🚀
 
 <div class="content">
 
+<img class="profile" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
 <h1>Welcome 👋</h1>
 
-<!-- PHOTO LINK CHANGE HERE -->
-<img src="PHOTO_LINK_HERE" alt="Dhanush Photo">
+<p>I am Dhanush.<br>
+I am learning Web Development and Programming.</p>
 
-<p>I am learning Web Development.</p>
-
-<h2>About Me</h2>
-<p>
-My name is <b>Dhanush</b>.  
-I am interested in <b>Programming, Websites, and Technology</b>.  
-This is my first personal website.
-</p>
+<div class="box">
 
 <h2>Contact Me</h2>
 
 <form onsubmit="showThankYou(event)">
+
 <input type="text" placeholder="Enter your name" required><br>
+
 <input type="email" placeholder="Enter your email" required><br>
+
 <textarea placeholder="Your message" rows="4" required></textarea><br>
+
 <button type="submit">Send</button>
+
 </form>
 
 <p id="msg"></p>
+
+</div>
 
 </div>
 
@@ -128,7 +124,7 @@ This is my first personal website.
 
 function showThankYou(event){
 event.preventDefault();
-document.getElementById("msg").innerText =
+document.getElementById("msg").innerText=
 "Thank you! Your message sent successfully ✅";
 }
 
