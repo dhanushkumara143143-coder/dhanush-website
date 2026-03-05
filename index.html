@@ -1,134 +1,232 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dhanush Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
-
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#667eea,#764ba2);
-text-align:center;
-color:white;
-}
-
-.navbar{
-background:black;
-padding:15px;
-font-size:24px;
-font-weight:bold;
-}
-
-.content{
-padding:30px;
-}
-
-.profile{
-width:150px;
-height:150px;
-border-radius:50%;
-border:5px solid white;
-margin-top:20px;
-}
-
-h1{
-font-size:32px;
-margin-top:15px;
-}
-
-p{
-font-size:18px;
-}
-
-.box{
-background:white;
-color:black;
-padding:20px;
-border-radius:10px;
-display:inline-block;
-margin-top:20px;
-}
-
-input,textarea{
-width:90%;
-max-width:300px;
-padding:10px;
-margin-top:10px;
-border-radius:5px;
-border:1px solid gray;
-}
-
-button{
-padding:10px 20px;
-margin-top:10px;
-background:#4CAF50;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#2e7d32;
-}
-
-#msg{
-color:green;
-font-weight:bold;
-margin-top:10px;
-}
-
+body{font-family:'Roboto',sans-serif;margin:0;height:100%;background:linear-gradient(270deg,#ff9a9e,#fad0c4,#a1c4fd,#c2e9fb);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+header{text-align:center; padding:30px;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:3em;margin-bottom:10px;}
+header p{font-size:1.2em;margin-top:0;}
+.section{background: rgba(255,255,255,0.95);margin: 20px auto;padding: 20px;border-radius: 15px;text-align:center;max-width: 600px;box-shadow:0 10px 20px rgba(0,0,0,0.2);transition: transform 0.3s, box-shadow 0.3s;}
+.section:hover{transform: translateY(-5px); box-shadow:0 15px 25px rgba(0,0,0,0.3);}
+.section img{width:250px;height:140px;object-fit:cover;border-radius:10px;margin-bottom:15px;}
+button{padding:12px 25px;background:#3498db;color:white;border:none;border-radius:8px;cursor:pointer;font-size:1em;font-weight:600;transition: background 0.3s;}
+button:hover{background:#2980b9;}
+.section h2{font-family:'Montserrat',sans-serif;font-size:1.8em;margin-bottom:10px;color:#2c3e50;}
+.section p{font-size:1em;color:#34495e;line-height:1.5em;}
 </style>
 </head>
-
 <body>
 
-<div class="navbar">
-Dhanush Website 🚀
+<header>
+<h1>NextGen Guide</h1>
+<p>Learn Skills • Choose Career • Build Future</p>
+</header>
+
+<div class="section">
+<h2>Career Guidance</h2>
+<img src="https://share.google/a3DVNU2hVs1lkQ3cY" alt="Career Guidance">
+<p>Career guidance in Telugu and English for students.</p>
+<a href="career.html"><button>Learn More</button></a>
 </div>
 
-<div class="content">
-
-<img class="profile" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-
-<h1>Welcome 👋</h1>
-
-<p>I am Dhanush.<br>
-I am learning Web Development and Programming.</p>
-
-<div class="box">
-
-<h2>Contact Me</h2>
-
-<form onsubmit="showThankYou(event)">
-
-<input type="text" placeholder="Enter your name" required><br>
-
-<input type="email" placeholder="Enter your email" required><br>
-
-<textarea placeholder="Your message" rows="4" required></textarea><br>
-
-<button type="submit">Send</button>
-
-</form>
-
-<p id="msg"></p>
-
+<div class="section">
+<h2>Web Creator & Developer</h2>
+<img src="https://share.google/fBnvvPBtx9VP7URKf" alt="Web Development">
+<p>Learn how to create and develop websites.</p>
+<a href="web.html"><button>Learn More</button></a>
 </div>
 
+<div class="section">
+<h2>AI Tools</h2>
+<img src="https://share.google/QxBpaW4IFOzpo1d0O" alt="AI Tools">
+<p>Explore useful AI tools for students.</p>
+<a href="ai.html"><button>Learn More</button></a>
 </div>
 
-<script>
+<div class="section">
+<h2>Prompts</h2>
+<img src="https://share.google/314omVDoIGhtdBftb" alt="Prompts">
+<p>Learn how to write good AI prompts.</p>
+<a href="prompt.html"><button>Learn More</button></a>
+</div>
 
-function showThankYou(event){
-event.preventDefault();
-document.getElementById("msg").innerText=
-"Thank you! Your message sent successfully ✅";
-}
-
-</script>
+<div class="section">
+<h2>Next Generation</h2>
+<img src="https://share.google/ZIxPlSH0sznekL3ry" alt="Next Generation">
+<p>How the next generation will learn and work.</p>
+<a href="future.html"><button>Learn More</button></a>
+</div>
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Career Guidance - NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Roboto',sans-serif;margin:0;background:linear-gradient(270deg,#ff9a9e,#fad0c4,#a1c4fd,#c2e9fb);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+header{text-align:center;padding:30px;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:2.8em;margin-bottom:10px;}
+header p{font-size:1.2em;margin-top:0;}
+.content{max-width:800px;margin:20px auto;background:rgba(255,255,255,0.95);padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.content h2{font-family:'Montserrat',sans-serif;color:#2c3e50;font-size:2em;margin-bottom:15px;}
+.content p{font-size:1em;color:#34495e;line-height:1.6em;margin-bottom:15px;}
+.content img{width:100%;height:auto;border-radius:10px;margin:15px 0;}
+.back-btn{display:block;width:150px;margin:20px auto;padding:12px 25px;background:#3498db;color:white;text-align:center;text-decoration:none;border-radius:8px;font-weight:600;transition: background 0.3s;}
+.back-btn:hover{background:#2980b9;}
+</style>
+</head>
+<body>
+<header>
+<h1>Career Guidance</h1>
+<p>NextGen Guide – Telugu & English</p>
+</header>
+
+<div class="content">
+<h2>Introduction</h2>
+<p>Career guidance is very important after inter to choose the right stream: MPC, BiPC, CEC, MEC, etc.<br>ఇంటర్ తర్వాత సరైన స్ట్రీమ్ ఎంచుకోవడం చాలా ముఖ్యం: MPC, BiPC, CEC, MEC మొదలైనవి.</p>
+<img src="https://share.google/a3DVNU2hVs1lkQ3cY" alt="Career Guidance">
+
+<h2>Popular Streams</h2>
+<p><strong>MPC:</strong> Mathematics, Physics, Chemistry – Engineering & Technology courses.<br>MPC: మ్యాథ్స్, ఫిజిక్స్, కెమిస్ట్రీ – ఇంజనీరింగ్ & టెక్నాలజీ కోర్సులు.</p>
+<p><strong>BiPC:</strong> Biology, Physics, Chemistry – Medical & Life Sciences.<br>BiPC: బయాలజీ, ఫిజిక్స్, కెమిస్ట్రీ – మెడికల్ & లైఫ్ సైన్సెస్ కోర్సులు.</p>
+<p><strong>CEC:</strong> Civics, Economics, Commerce – Arts & Management courses.<br>CEC: సివిక్స్, ఎకనామిక్స్, కామర్స్ – ఆర్ట్స్ & మేనేజ్‌మెంట్ కోర్సులు.</p>
+<p><strong>MEC:</strong> Maths, Economics, Commerce – Business & Economics courses.<br>MEC: మ్యాథ్స్, ఎకనామిక్స్, కామర్స్ – బిజినెస్ & ఎకనామిక్స్ కోర్సులు.</p>
+
+<h2>Future Opportunities</h2>
+<p>Choosing the right stream helps students secure their future in jobs, higher studies, and career growth.<br>సరైన స్ట్రీమ్ ఎంచుకోవడం ద్వారా విద్యార్థులు ఉద్యోగాలు, ఉన్నత అధ్యయనం మరియు కెరీర్ వృద్ధిలో విజయం సాధిస్తారు.</p>
+<img src="https://share.google/fBnvvPBtx9VP7URKf" alt="Future Opportunities">
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+</body>
+  </html>
+
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Web Creator & Developer - NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Roboto',sans-serif;margin:0;background:linear-gradient(270deg,#a1c4fd,#c2e9fb,#ff9a9e,#fad0c4);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+header{text-align:center;padding:30px;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:2.8em;margin-bottom:10px;}
+header p{font-size:1.2em;margin-top:0;}
+.content{max-width:800px;margin:20px auto;background:rgba(255,255,255,0.95);padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.content h2{font-family:'Montserrat',sans-serif;color:#2c3e50;font-size:2em;margin-bottom:15px;}
+.content p{font-size:1em;color:#34495e;line-height:1.6em;margin-bottom:15px;}
+.content img{width:100%;height:auto;border-radius:10px;margin:15px 0;}
+.back-btn{display:block;width:150px;margin:20px auto;padding:12px 25px;background:#3498db;color:white;text-align:center;text-decoration:none;border-radius:8px;font-weight:600;transition: background 0.3s;}
+.back-btn:hover{background:#2980b9;}
+</style>
+</head>
+<body>
+<header>
+<h1>Web Creator & Developer</h1>
+<p>Step by step guide for beginners</p>
+</header>
+
+<div class="content">
+<h2>Introduction</h2>
+<p>Learn to create websites using HTML, CSS, and JavaScript.<br>వెబ్‌సైట్ క్రియేట్ చేయడం కోసం HTML, CSS, మరియు JavaScript నేర్చుకోండి.</p>
+<img src="https://share.google/fBnvvPBtx9VP7URKf" alt="Web Development">
+
+<h2>Basic Steps</h2>
+<p>1. Learn HTML – structure of web pages.<br>HTML నేర్చుకోండి – వెబ్ పేజీల నిర్మాణం.</p>
+<p>2. Learn CSS – styling web pages.<br>CSS నేర్చుకోండి – వెబ్ పేజీలను స్టైలింగ్ చేయడం.</p>
+<p>3. Learn JavaScript – add interactivity.<br>JavaScript నేర్చుకోండి – ఇంటరాక్టివ్ ఫీచర్స్ కోసం.</p>
+<p>4. Combine all and practice building small projects.<br>అన్నింటినీ కలిపి చిన్న ప్రాజెక్ట్స్ నిర్మించడం ప్రాక్టీస్ చేయండి.</p>
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Tools - NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Roboto',sans-serif;margin:0;background:linear-gradient(270deg,#fad0c4,#ff9a9e,#a1c4fd,#c2e9fb);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+header{text-align:center;padding:30px;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:2.8em;margin-bottom:10px;}
+header p{font-size:1.2em;margin-top:0;}
+.content{max-width:800px;margin:20px auto;background:rgba(255,255,255,0.95);padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.content h2{font-family:'Montserrat',sans-serif;color:#2c3e50;font-size:2em;margin-bottom:15px;}
+.content p{font-size:1em;color:#34495e;line-height:1.6em;margin-bottom:15px;}
+.content img{width:100%;height:auto;border-radius:10px;margin:15px 0;}
+.back-btn{display:block;width:150px;margin:20px auto;padding:12px 25px;background:#3498db;color:white;text-align:center;text-decoration:none;border-radius:8px;font-weight:600;transition: background 0.3s;}
+.back-btn:hover{background:#2980b9;}
+</style>
+</head>
+<body>
+<header>
+<h1>AI Tools</h1>
+<p>Useful AI Tools for Students</p>
+</header>
+
+<div class="content">
+<h2>Introduction</h2>
+<p>Explore popular AI tools that help in learning, coding, and design.<br>విద్య, కోడింగ్ మరియు డిజైన్ లో ఉపయోగపడే ప్రముఖ AI టూల్స్ గురించి తెలుసుకోండి.</p>
+<img src="https://share.google/QxBpaW4IFOzpo1d0O" alt="AI Tools">
+
+<h2>Examples</h2>
+<p>1. ChatGPT – AI chatbot for learning.<br>2. Canva – Design AI tool.<br>3. Notion AI – Productivity & study tool.</p>
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prompts - NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Roboto',sans-serif;margin:0;background:linear-gradient(270deg,#a1c4fd,#c2e9fb,#ff9a9e,#fad0c4);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+header{text-align:center;padding:30px;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:2.8em;margin-bottom:10px;}
+header p{font-size:1.2em;margin-top:0;}
+.content{max-width:800px;margin:20px auto;background:rgba(255,255,255,0.95);padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.content h2{font-family:'Montserrat',sans-serif;color:#2c3e50;font-size:2em;margin-bottom:15px;}
+.content p{font-size:1em;color:#34495e;line-height:1.6em;margin-bottom:15px;}
+.content img{width:100%;height:auto;border-radius:10px;margin:15px 0;}
+.back-btn{display:block;width:150px;margin:20px auto;padding:12px 25px;background:#3498db;color:white;text-align:center;text-decoration:none;border-radius:8px;font-weight:600;transition: background 0.3s;}
+.back-btn:hover{background:#2980b9;}
+</style>
+</head>
+<body>
+<header>
+<h1>Prompts</h1>
+<p>How to write good AI prompts</p>
+</header>
+
+<div class="content">
+<h2>Introduction</h2>
+<p>Learn how to write effective AI prompts for study and coding.<br>స్టడీ మరియు కోడింగ్ కోసం సమర్థవంతమైన AI ప్రాంప్ట్స్ ఎలా రాయాలో తెలుసుకోండి.</p>
+<img src="https://share.google/314omVDoIGhtdBftb" alt="Prompts">
+
+<h2>Examples</h2>
+<p>1. Study prompts – Summarize chapters.<br>2. Coding prompts – Generate sample code.<br>3. Design prompts – Create graphics with AI.</p>
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Next Generation - NextGen Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Roboto',sans-serif;margin:0;background:linear-gradient(270deg,#ff9a9e,#fad0c4,#a1c4fd,#c2e9fb);background-size:800% 800%;animation:GradientBG 20s ease infinite;}
+@keyframes GradientBG{0%{background-position:0% 50
