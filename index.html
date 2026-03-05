@@ -1,101 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dhanush Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-    }
+<title>Dhanush Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .navbar {
-      background-color: #111;
-      color: white;
-      padding: 15px;
-      font-size: 20px;
-    }
+<style>
 
-    .content {
-      padding: 30px;
-    }
+body{
+margin:0;
+font-family:Verdana, sans-serif;
+background:linear-gradient(to right,#4facfe,#00f2fe);
+text-align:center;
+color:#333;
+}
 
-    h1 {
-      color: #333;
-    }
+.navbar{
+background:#000;
+color:white;
+padding:18px;
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
+}
 
-    img {
-      width:150px;
-      border-radius:50%;
-      margin-top:10px;
-    }
+.content{
+background:white;
+margin:30px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
 
-    input, textarea {
-      width: 90%;
-      max-width: 300px;
-      padding: 10px;
-      margin-top: 10px;
-    }
+h1{
+color:#0077ff;
+font-size:32px;
+}
 
-    button {
-      padding: 10px 20px;
-      margin-top: 10px;
-      background-color: blue;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+h2{
+color:#444;
+margin-top:30px;
+}
 
-    button:hover {
-      background-color: darkblue;
-    }
+p{
+font-size:16px;
+line-height:1.6;
+}
 
-    #msg {
-      color: green;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
+img{
+width:150px;
+border-radius:50%;
+border:4px solid #0077ff;
+margin-top:10px;
+}
+
+input,textarea{
+width:90%;
+max-width:300px;
+padding:10px;
+margin-top:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+button{
+padding:10px 20px;
+margin-top:12px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0044aa;
+transform:scale(1.05);
+}
+
+#msg{
+color:green;
+font-weight:bold;
+margin-top:12px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="navbar">
-    Dhanush Website 🚀
-  </div>
+<div class="navbar">
+Dhanush Website 🚀
+</div>
 
-  <div class="content">
-    <h1>Welcome 👋</h1>
+<div class="content">
 
-    <img src="https://via.placeholder.com/150" alt="Dhanush Photo">
+<h1>Welcome 👋</h1>
 
-    <p>I am learning Web Development.</p>
+<!-- PHOTO LINK CHANGE HERE -->
+<img src="PHOTO_LINK_HERE" alt="Dhanush Photo">
 
-    <h2>About Me</h2>
-    <p>My name is Dhanush. I am learning Web Development and programming.</p>
+<p>I am learning Web Development.</p>
 
-    <h2>Contact Me</h2>
+<h2>About Me</h2>
+<p>
+My name is <b>Dhanush</b>.  
+I am interested in <b>Programming, Websites, and Technology</b>.  
+This is my first personal website.
+</p>
 
-    <form onsubmit="showThankYou(event)">
-      <input type="text" placeholder="Enter your name" required><br>
-      <input type="email" placeholder="Enter your email" required><br>
-      <textarea placeholder="Your message" rows="4" required></textarea><br>
-      <button type="submit">Send</button>
-    </form>
+<h2>Contact Me</h2>
 
-    <p id="msg"></p>
-  </div>
+<form onsubmit="showThankYou(event)">
+<input type="text" placeholder="Enter your name" required><br>
+<input type="email" placeholder="Enter your email" required><br>
+<textarea placeholder="Your message" rows="4" required></textarea><br>
+<button type="submit">Send</button>
+</form>
 
-  <script>
-    function showThankYou(event) {
-      event.preventDefault();
-      document.getElementById("msg").innerText =
-        "Thank you! Your message sent successfully ✅";
-    }
-  </script>
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function showThankYou(event){
+event.preventDefault();
+document.getElementById("msg").innerText =
+"Thank you! Your message sent successfully ✅";
+}
+
+</script>
 
 </body>
 </html>
